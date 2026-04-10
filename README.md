@@ -18,6 +18,7 @@ Email-Agent/
 ├── email_sender.py
 ├── requirements.txt
 ├── .env.example
+├── credentials.json
 └── README.md
 ```
 
