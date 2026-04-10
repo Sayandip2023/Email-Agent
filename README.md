@@ -1,4 +1,4 @@
-#  AI News Agent
+#  Email AI Agent
 
 Run once, get a beautiful email digest of the latest AI advancements across:
 -  **LLM / Model Releases**
