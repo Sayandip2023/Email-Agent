@@ -1,4 +1,4 @@
-#  Email Agent
+#  AI News Agent
 
 Run once, get a beautiful email digest of the latest AI advancements across:
 -  **LLM / Model Releases**
@@ -25,9 +25,6 @@ Email-Agent/
 ### 2. Create a virtual environment
 
 ```bash
-# Mac / Linux
-python3 -m venv venv
-source venv/bin/activate
 
 # Windows
 python -m venv venv
@@ -64,6 +61,15 @@ This lets the agent send email *from* your Gmail without storing your password.
 7. Download the JSON file and rename it `credentials.json`
 8. Place `credentials.json` in the `Email-Agent/` folder
 
+#### Add Test Users (required while app is in testing)
+
+Since the OAuth app is in **Testing** mode, only explicitly added Google accounts can authorise and receive emails.
+
+1. Go to **APIs & Services → OAuth consent screen**
+2. Scroll down to **Test users** → click **Add users**
+3. Add **both** your sender Gmail address and your `RECIPIENT_EMAIL` address
+4. Click **Save**
+
 > **First run only:** A browser window will open asking you to authorise
 > Gmail access. After that, a `token.json` is saved and future runs are silent.
 
@@ -78,8 +84,8 @@ cp .env.example .env
 ```
 
 ```env
-GEMINI_API_KEY="your key here"
-RECIPIENT_EMAIL="your mail here"
+GEMINI_API_KEY="your_gemini_api_key_here"
+RECIPIENT_EMAIL="you@gmail.com"
 ```
 
 ---
