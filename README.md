@@ -13,7 +13,7 @@ Run once, get a beautiful email digest of the latest AI advancements across:
 ### 1. Project Structure
 
 ```text
-ai_news_agent/
+Email-Agent/
 ├── main.py
 ├── email_sender.py
 ├── requirements.txt
@@ -61,7 +61,7 @@ This lets the agent send email *from* your Gmail without storing your password.
 5. Click **Create Credentials → OAuth client ID**
 6. Choose **Desktop app**, give it a name, click **Create**
 7. Download the JSON file and rename it `credentials.json`
-8. Place `credentials.json` in the `ai_news_agent/` folder
+8. Place `credentials.json` in the `Email-Agent/` folder
 
 > **First run only:** A browser window will open asking you to authorise
 > Gmail access. After that, a `token.json` is saved and future runs are silent.
@@ -77,8 +77,8 @@ cp .env.example .env
 ```
 
 ```env
-GEMINI_API_KEY="your_gemini_api_key_here"
-RECIPIENT_EMAIL="you@gmail.com"
+GEMINI_API_KEY="your key here"
+RECIPIENT_EMAIL="your mail here"
 ```
 
 ---
@@ -86,8 +86,6 @@ RECIPIENT_EMAIL="you@gmail.com"
 ## Run
 
 ```bash
-# Mac / Linux
-python3 main.py
 
 # Windows
 python main.py
