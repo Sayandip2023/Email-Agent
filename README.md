@@ -8,7 +8,7 @@ Run once, get a beautiful email digest of the latest AI advancements across:
 
 ---
 
-## Setup (5 minutes)
+## Setup 
 
 ### 1. Project Structure
 
