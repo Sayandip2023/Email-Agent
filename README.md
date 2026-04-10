@@ -84,8 +84,8 @@ cp .env.example .env
 ```
 
 ```env
-GEMINI_API_KEY="your_gemini_api_key_here"
-RECIPIENT_EMAIL="you@gmail.com"
+GEMINI_API_KEY="your key here"
+RECIPIENT_EMAIL="your email here"
 ```
 
 ---
